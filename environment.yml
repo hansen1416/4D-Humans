@@ -31,3 +31,6 @@ dependencies:
       - hydra-colorlog
       - pyrootutils
       - webdataset
+
+      # for pyrender
+      # apt-get install libosmesa6-dev freeglut3-dev
