@@ -109,8 +109,6 @@ def get_config(
     else:
         cfg = CN(new_allowed=True)
 
-    print(111111111111111111111111222222222222222)
-    print(config_file)
     cfg.merge_from_file(config_file)
 
     if update_cachedir:
