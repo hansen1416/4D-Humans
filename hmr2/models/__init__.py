@@ -83,8 +83,6 @@ def load_hmr2(checkpoint_path=DEFAULT_CHECKPOINT):
     model_cfg = str(Path(checkpoint_path).parent.parent / "model_config.yaml")
     model_cfg = get_config(model_cfg, update_cachedir=True)
 
-    print(model_cfg)
-
     # Override some config values, to crop bbox correctly
     if (model_cfg.MODEL.BACKBONE.TYPE == "vit") and (
         "BBOX_SHAPE" not in model_cfg.MODEL
