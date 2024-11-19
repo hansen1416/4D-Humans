@@ -21,7 +21,7 @@ dependencies:
       - timm
       - dill
       - pandas
-      - git+https://github.com/facebookresearch/detectron2
+      - git+https://github.com/hansen1416/detectron2.git@a59f05630a8f205756064244bf5beb8661f96180
       - git+https://github.com/mattloper/chumpy
 
       # For training
