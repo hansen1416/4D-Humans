@@ -109,8 +109,7 @@ def get_config(
     else:
         cfg = CN(new_allowed=True)
 
-    if os.path.exists(config_file):
-        cfg.merge_from_file(config_file)
+    cfg.merge_from_file(config_file)
 
     if update_cachedir:
 
