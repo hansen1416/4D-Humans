@@ -21,8 +21,14 @@ for f in files:
         print(f"{f} in process")
 
     video_path = os.path.join(target_folder, f)
+    result_path = os.path.join(results_folder, file_name)
 
     # python track.py video.source="example_data/videos/gymnasts.mp4"
-    command = ["python", "track.py", f'video.source="{video_path}"']
+    command = [
+        "python",
+        "track.py",
+        f'video.source="{video_path}"',
+        f'video.output_dir="{result_path}"',
+    ]
 
     subprocess.run(command, check=True)
