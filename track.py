@@ -218,12 +218,6 @@ cs.store(name="config", node=Human4DConfig)
 def main(cfg: DictConfig) -> Optional[float]:
     """Main function for running the PHALP tracker."""
 
-    print(cfg)
-    print(cfg.video)
-    print(cfg.video.output_dir)
-
-    return
-
     phalp_tracker = HMR2_4dhuman(cfg)
 
     phalp_tracker.track()
